@@ -1,5 +1,10 @@
 # Step 4: Aggregation -- an example to use prediction results.
 
+## Install sklearn
+
+pip install scikit-learn
+
+## Run aggregate
 
 The example demonstrate how to aggregate the prediction results and calculate AUC. It takes
 two prediction results, one contains reversed sequence of the other but with the same labels.
