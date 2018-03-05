@@ -1,5 +1,9 @@
 # Step 3: Run prediction with test data using CloudML Engine service.
 
+## Install googleapiclient
+
+pip install --upgrade google-api-python-client
+
 
 ## Get model path
 
