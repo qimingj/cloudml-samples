@@ -1,0 +1,5 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: standard_p100
+  parameterServerCount: 0
+  workerCount: 0
