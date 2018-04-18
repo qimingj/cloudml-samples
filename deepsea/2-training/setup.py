@@ -10,6 +10,7 @@ setup(
   long_description="""
   """,
   install_requires=[
+    'tf-nightly-gpu'
   ],
   package_data={
   },
