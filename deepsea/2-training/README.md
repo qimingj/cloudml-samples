@@ -35,13 +35,13 @@ and find “Google Cloud Machine Learning Engine”. Enable it.
 
 ## Run Training
 
-gcloud ml-engine jobs submit training [jobname] --runtime-version=1.4 --module-name trainer.task --package-path=./trainer --job-dir=[gs://your-output-path] --config config.yaml --region us-central1 -- --train=[gs://your-train-tfrecord-file] --eval=[gs://your-valid-tfrecord-file] --train-steps=500000
+gcloud ml-engine jobs submit training [jobname] --runtime-version=1.6 --module-name trainer.task --package-path=./trainer --job-dir=[gs://your-output-path] --config config.yaml --region us-central1 -- --train=[gs://your-train-tfrecord-file] --eval=[gs://your-valid-tfrecord-file] --train-steps=500000
 
 For example:
 
-gcloud ml-engine jobs submit training deepseajob --runtime-version=1.4 --module-name trainer.task --package-path=./trainer --job-dir=gs://bradley-playground/deepsea/modeljob --config config.yaml --region us-central1 -- --train=gs://bradley-playground/deepsea/data/train.tfrecord.gz --eval=gs://bradley-playground/deepsea/data/valid.tfrecord.gz --train-steps=500000
+gcloud ml-engine jobs submit training deepseajob --runtime-version=1.6 --module-name trainer.task --package-path=./trainer --job-dir=gs://bradley-playground/deepsea/modeljob --config config.yaml --region us-central1 -- --train=gs://bradley-playground/deepsea/data/train.tfrecord.gz --eval=gs://bradley-playground/deepsea/data/valid.tfrecord.gz --train-steps=500000
 
-gcloud ml-engine jobs submit training deepseaeval --runtime-version=1.4 --module-name trainer.task --package-path=./trainer --job-dir=gs://bradley-playground/deepsea/modeljob8 --config config.yaml --region us-central1 -- --eval=gs://bradley-playground/test1.tfrecord.gz --evalonly
+gcloud ml-engine jobs submit training deepseaeval --runtime-version=1.6 --module-name trainer.task --package-path=./trainer --job-dir=gs://bradley-playground/deepsea/modeljob8 --config config.yaml --region us-central1 -- --eval=gs://bradley-playground/test1.tfrecord.gz --evalonly
 
 Note that in config.yaml P100 single node training is specified.
 
