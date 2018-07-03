@@ -10,7 +10,6 @@ setup(
   long_description="""
   """,
   install_requires=[
-    'tensorflow-gpu==1.8.0'
   ],
   package_data={
   },
