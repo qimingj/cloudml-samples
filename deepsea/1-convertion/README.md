@@ -7,9 +7,11 @@ python convert.py --input [inputdir] --output [outputdir]
 
 The training data can be found at:
 
-gs://bradley-playground/deepsea/train.mat
-gs://bradley-playground/deepsea/valid.mat
-gs://bradley-playground/deepsea/test.mat
+* gs://bradley-playground/deepsea/train.mat
+* gs://bradley-playground/deepsea/valid.mat
+* gs://bradley-playground/deepsea/test.mat
+
+Save them to a local directory and pass the dir path as input.
 
 
 
