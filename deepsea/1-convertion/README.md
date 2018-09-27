@@ -5,6 +5,13 @@ Copy train|test|valid.mat files to a local directory. Run the following:
 
 python convert.py --input [inputdir] --output [outputdir]
 
+The training data can be found at:
+
+gs://bradley-playground/deepsea/train.mat
+gs://bradley-playground/deepsea/valid.mat
+gs://bradley-playground/deepsea/test.mat
+
+
 
 
 
